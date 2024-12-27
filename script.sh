@@ -7,8 +7,11 @@ if docker images | grep -q "$IMAGE_NAME"; then
     docker rmi -f "$IMAGE_NAME:$TAG"
 fi
 
+docker ps -q -f name=calculator | grep -q . && sudo docker stop calculator
+
 # 새 이미지 다운로드
 echo "이미지 $IMAGE_NAME:$TAG 다운로드 중..."
 docker pull "$IMAGE_NAME:$TAG"
 
+docker run -d -p 9090:9090 --rm --name calculator "$IMAGE_NAME:$TAG"
 echo "작업 완료!"
