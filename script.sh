@@ -14,4 +14,5 @@ echo "이미지 $IMAGE_NAME:$TAG 다운로드 중..."
 docker pull "$IMAGE_NAME:$TAG"
 
 docker run -d -p 9090:9090 --rm --name calculator "$IMAGE_NAME:$TAG"
+docker image prune -f
 echo "작업 완료!"
