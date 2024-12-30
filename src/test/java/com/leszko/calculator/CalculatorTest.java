@@ -1,8 +1,10 @@
 package com.leszko.calculator;
 
-import org.junit.Test; 
-import static org.junit.Assert.assertEquals; 
- 
+import org.junit.Test;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import static org.junit.Assert.assertEquals;
+@SpringBootTest
 public class CalculatorTest { 
      private Calculator calculator = new Calculator(); 
  

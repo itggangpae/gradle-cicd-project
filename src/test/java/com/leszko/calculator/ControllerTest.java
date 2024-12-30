@@ -19,7 +19,7 @@ public class ControllerTest {
     private MockMvc mockMvc;
 
     @Test
-    public void testGetHotelById() throws Exception {
+    public void testHealth() throws Exception {
         mockMvc.perform(post("/health")
                         .contentType(MediaType.APPLICATION_JSON))
                 .andExpect(status().isOk())
