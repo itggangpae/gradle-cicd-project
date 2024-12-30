@@ -11,6 +11,7 @@ import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.*;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.*;
 
+
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.MOCK)
 @AutoConfigureMockMvc
 public class ControllerTest {
@@ -26,4 +27,6 @@ public class ControllerTest {
                 .andExpect(content().contentType("text/plain;charset=UTF-8"))
                 .andDo(MockMvcResultHandlers.print(System.out));
     }
+
+
 }
