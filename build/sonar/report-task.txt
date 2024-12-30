@@ -1,0 +1,6 @@
+projectKey=com.leszko:calculator
+serverUrl=http://localhost:9000
+serverVersion=24.12.0.100206
+dashboardUrl=http://localhost:9000/dashboard?id=com.leszko%3Acalculator
+ceTaskId=63b8a8b3-3c9c-4138-87d1-965df54ed838
+ceTaskUrl=http://localhost:9000/api/ce/task?id=63b8a8b3-3c9c-4138-87d1-965df54ed838
