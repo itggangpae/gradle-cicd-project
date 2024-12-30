@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.leszko.calculator.ControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-30T00:34:00" hostname="ADAMui-MacBookPro.local" time="0.026">
+  <properties/>
+  <testcase name="testHealth()" classname="com.leszko.calculator.ControllerTest" time="0.026"/>
+  <system-out><![CDATA[2024-12-30 09:33:59.977  INFO 8874 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.leszko.calculator.ControllerTest], using SpringBootContextLoader
+2024-12-30 09:33:59.977  INFO 8874 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [com.leszko.calculator.ControllerTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2024-12-30 09:33:59.977  INFO 8874 --- [    Test worker] t.c.s.AnnotationConfigContextLoaderUtils : Could not detect default configuration classes for test class [com.leszko.calculator.ControllerTest]: ControllerTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2024-12-30 09:33:59.980  INFO 8874 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Found @SpringBootConfiguration com.leszko.calculator.CalculatorApplication for test class com.leszko.calculator.ControllerTest
+2024-12-30 09:33:59.980  INFO 8874 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+2024-12-30 09:33:59.981  INFO 8874 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5a5a973c, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@15c96f24, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@24482a4f, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3140ad41, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3f2d2f22, org.springframework.test.context.support.DirtiesContextTestExecutionListener@61c3d7ac, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4bc9389, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@30221cfa, org.springframework.test.context.event.EventPublishingTestExecutionListener@662061e3, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@1921b43c, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@79e15c4a, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@59845a40, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@3c4e17ea, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@285ac40b, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@5b2ade46]
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.1)
+
+2024-12-30 09:33:59.992  INFO 8874 --- [    Test worker] com.leszko.calculator.ControllerTest     : Starting ControllerTest using Java 17.0.8 on ADAMui-MacBookPro.local with PID 8874 (started by adam in /Users/adam/Documents/lecture/DevOps/CICD/ContinuousDelivery/Chapter04/sample1)
+2024-12-30 09:33:59.992  INFO 8874 --- [    Test worker] com.leszko.calculator.ControllerTest     : No active profile set, falling back to default profiles: default
+2024-12-30 09:34:00.052  INFO 8874 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-30 09:34:00.055  INFO 8874 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 2 ms. Found 1 JPA repository interfaces.
+2024-12-30 09:34:00.104  INFO 8874 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-30 09:34:00.106  INFO 8874 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Starting...
+2024-12-30 09:34:00.117  INFO 8874 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-2 - Start completed.
+2024-12-30 09:34:00.117  INFO 8874 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-12-30 09:34:00.124 DEBUG 8874 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists Member
+Hibernate: 
+    
+    drop table if exists Member
+2024-12-30 09:34:00.133 DEBUG 8874 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table Member (
+       id bigint not null auto_increment,
+        age integer not null,
+        email varchar(255) not null,
+        name varchar(255) not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Member (
+       id bigint not null auto_increment,
+        age integer not null,
+        email varchar(255) not null,
+        name varchar(255) not null,
+        primary key (id)
+    ) engine=InnoDB
+2024-12-30 09:34:00.144 DEBUG 8874 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table Member 
+       add constraint UK_9qv6yhjqm8iafto8qk452gx8h unique (email)
+Hibernate: 
+    
+    alter table Member 
+       add constraint UK_9qv6yhjqm8iafto8qk452gx8h unique (email)
+2024-12-30 09:34:00.151  INFO 8874 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-12-30 09:34:00.151  INFO 8874 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-30 09:34:00.300  INFO 8874 --- [    Test worker] o.s.b.t.m.w.SpringBootMockServletContext : Initializing Spring TestDispatcherServlet ''
+2024-12-30 09:34:00.300  INFO 8874 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Initializing Servlet ''
+2024-12-30 09:34:00.301  INFO 8874 --- [    Test worker] o.s.t.web.servlet.TestDispatcherServlet  : Completed initialization in 1 ms
+2024-12-30 09:34:00.304  INFO 8874 --- [    Test worker] com.leszko.calculator.ControllerTest     : Started ControllerTest in 0.321 seconds (JVM running for 2.332)
+
+MockHttpServletRequest:
+      HTTP Method = POST
+      Request URI = /health
+       Parameters = {}
+          Headers = [Content-Type:"application/json;charset=UTF-8"]
+             Body = null
+    Session Attrs = {}
+
+Handler:
+             Type = com.leszko.calculator.CalculatorController
+           Method = com.leszko.calculator.CalculatorController#health()
+
+Async:
+    Async started = false
+     Async result = null
+
+Resolved Exception:
+             Type = null
+
+ModelAndView:
+        View name = null
+             View = null
+            Model = null
+
+FlashMap:
+       Attributes = null
+
+MockHttpServletResponse:
+           Status = 200
+    Error message = null
+          Headers = [Content-Type:"text/plain;charset=UTF-8", Content-Length:"2"]
+     Content type = text/plain;charset=UTF-8
+             Body = OK
+    Forwarded URL = null
+   Redirected URL = null
+          Cookies = []
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

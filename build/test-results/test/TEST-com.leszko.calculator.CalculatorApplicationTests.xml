@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.leszko.calculator.CalculatorApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-12-30T00:33:59" hostname="ADAMui-MacBookPro.local" time="0.089">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.leszko.calculator.CalculatorApplicationTests" time="0.089"/>
+  <system-out><![CDATA[09:33:58.285 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+09:33:58.289 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+09:33:58.304 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [com.leszko.calculator.CalculatorApplicationTests] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+09:33:58.308 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.leszko.calculator.CalculatorApplicationTests], using SpringBootContextLoader
+09:33:58.310 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.leszko.calculator.CalculatorApplicationTests]: class path resource [com/leszko/calculator/CalculatorApplicationTests-context.xml] does not exist
+09:33:58.310 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [com.leszko.calculator.CalculatorApplicationTests]: class path resource [com/leszko/calculator/CalculatorApplicationTestsContext.groovy] does not exist
+09:33:58.310 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [com.leszko.calculator.CalculatorApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+09:33:58.310 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils - Could not detect default configuration classes for test class [com.leszko.calculator.CalculatorApplicationTests]: CalculatorApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+09:33:58.324 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [com.leszko.calculator.CalculatorApplicationTests]
+09:33:58.350 [Test worker] DEBUG org.springframework.context.annotation.ClassPathScanningCandidateComponentProvider - Identified candidate component class: file [/Users/adam/Documents/lecture/DevOps/CICD/ContinuousDelivery/Chapter04/sample1/build/classes/java/main/com/leszko/calculator/CalculatorApplication.class]
+09:33:58.353 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Found @SpringBootConfiguration com.leszko.calculator.CalculatorApplication for test class com.leszko.calculator.CalculatorApplicationTests
+09:33:58.387 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [com.leszko.calculator.CalculatorApplicationTests]: using defaults.
+09:33:58.387 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.event.ApplicationEventsTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener, org.springframework.test.context.event.EventPublishingTestExecutionListener]
+09:33:58.393 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@1de5f0ef, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@376a312c, org.springframework.test.context.event.ApplicationEventsTestExecutionListener@28d6290, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@6ca0256d, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@5ef0d29e, org.springframework.test.context.support.DirtiesContextTestExecutionListener@38f57b3d, org.springframework.test.context.transaction.TransactionalTestExecutionListener@51850751, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@3ce3db41, org.springframework.test.context.event.EventPublishingTestExecutionListener@64df9a61, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@77602954, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@e260766, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2c3dec30, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@34a97744, org.springframework.boot.test.autoconfigure.webservices.client.MockWebServiceServerTestExecutionListener@4275c20c, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7c56e013]
+09:33:58.394 [Test worker] DEBUG org.springframework.test.context.support.AbstractDirtiesContextTestExecutionListener - Before test class: context [DefaultTestContext@2c7d121c testClass = CalculatorApplicationTests, testInstance = [null], testMethod = [null], testException = [null], mergedContextConfiguration = [WebMergedContextConfiguration@65aa6596 testClass = CalculatorApplicationTests, locations = '{}', classes = '{class com.leszko.calculator.CalculatorApplication}', contextInitializerClasses = '[]', activeProfiles = '{}', propertySourceLocations = '{}', propertySourceProperties = '{org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}', contextCustomizers = set[org.springframework.boot.test.autoconfigure.actuate.metrics.MetricsExportContextCustomizerFactory$DisableMetricExportContextCustomizer@ab7395e, org.springframework.boot.test.autoconfigure.properties.PropertyMappingContextCustomizer@0, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverContextCustomizerFactory$Customizer@4331d187, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@1608bcbd, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@b2c5e07, org.springframework.boot.test.mock.mockito.MockitoContextCustomizer@0, org.springframework.boot.test.web.client.TestRestTemplateContextCustomizer@676cf48, org.springframework.boot.test.context.SpringBootTestArgs@1, org.springframework.boot.test.context.SpringBootTestWebEnvironment@192c3f1e], resourceBasePath = 'src/main/webapp', contextLoader = 'org.springframework.boot.test.context.SpringBootContextLoader', parent = [null]], attributes = map['org.springframework.test.context.web.ServletTestExecutionListener.activateListener' -> true]], class annotated with @DirtiesContext [false] with mode [null].
+09:33:58.412 [Test worker] DEBUG org.springframework.boot.ApplicationServletEnvironment - Activating profiles []
+09:33:58.413 [Test worker] DEBUG org.springframework.test.context.support.TestPropertySourceUtils - Adding inlined properties to environment: {spring.jmx.enabled=false, org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true}
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v2.6.1)
+
+2024-12-30 09:33:58.534  INFO 8874 --- [    Test worker] c.l.c.CalculatorApplicationTests         : Starting CalculatorApplicationTests using Java 17.0.8 on ADAMui-MacBookPro.local with PID 8874 (started by adam in /Users/adam/Documents/lecture/DevOps/CICD/ContinuousDelivery/Chapter04/sample1)
+2024-12-30 09:33:58.534  INFO 8874 --- [    Test worker] c.l.c.CalculatorApplicationTests         : No active profile set, falling back to default profiles: default
+2024-12-30 09:33:58.769  INFO 8874 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-30 09:33:58.788  INFO 8874 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 15 ms. Found 1 JPA repository interfaces.
+2024-12-30 09:33:59.014  INFO 8874 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-30 09:33:59.034  INFO 8874 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.1.Final
+2024-12-30 09:33:59.099  INFO 8874 --- [    Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2024-12-30 09:33:59.138  INFO 8874 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-30 09:33:59.213  INFO 8874 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-30 09:33:59.225  INFO 8874 --- [    Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2024-12-30 09:33:59.408 DEBUG 8874 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    drop table if exists Member
+Hibernate: 
+    
+    drop table if exists Member
+2024-12-30 09:33:59.425 DEBUG 8874 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    create table Member (
+       id bigint not null auto_increment,
+        age integer not null,
+        email varchar(255) not null,
+        name varchar(255) not null,
+        primary key (id)
+    ) engine=InnoDB
+Hibernate: 
+    
+    create table Member (
+       id bigint not null auto_increment,
+        age integer not null,
+        email varchar(255) not null,
+        name varchar(255) not null,
+        primary key (id)
+    ) engine=InnoDB
+2024-12-30 09:33:59.434 DEBUG 8874 --- [    Test worker] org.hibernate.SQL                        : 
+    
+    alter table Member 
+       add constraint UK_9qv6yhjqm8iafto8qk452gx8h unique (email)
+Hibernate: 
+    
+    alter table Member 
+       add constraint UK_9qv6yhjqm8iafto8qk452gx8h unique (email)
+2024-12-30 09:33:59.441  INFO 8874 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2024-12-30 09:33:59.444  INFO 8874 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-30 09:33:59.876  INFO 8874 --- [    Test worker] c.l.c.CalculatorApplicationTests         : Started CalculatorApplicationTests in 1.463 seconds (JVM running for 1.904)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
